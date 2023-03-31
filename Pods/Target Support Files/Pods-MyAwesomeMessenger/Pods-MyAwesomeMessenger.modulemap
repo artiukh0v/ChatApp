@@ -1,0 +1,6 @@
+framework module Pods_MyAwesomeMessenger {
+  umbrella header "Pods-MyAwesomeMessenger-umbrella.h"
+
+  export *
+  module * { export * }
+}

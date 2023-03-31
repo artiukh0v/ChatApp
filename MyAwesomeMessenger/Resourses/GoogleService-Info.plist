@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>935381122967-r77jlrt5e0m76o8ca3s2u603luh94nkd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.935381122967-r77jlrt5e0m76o8ca3s2u603luh94nkd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDeWcxhYAuqipkVXK9mQdYRD4ofWspGpW0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>935381122967</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>-.MyAwesomeMessenger</string>
+	<key>PROJECT_ID</key>
+	<string>myawesomemessenger</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myawesomemessenger.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:935381122967:ios:f4a0423fb87a5867fe8ed2</string>
+	<key>DATABASE_URL</key>
+	<string>https://myawesomemessenger-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

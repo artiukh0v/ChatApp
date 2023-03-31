@@ -1,0 +1,979 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4C96521D2A93D9111806908 /* Pods_MyAwesomeMessenger_MyAwesomeMessengerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312916066EBB0A16D33CD218 /* Pods_MyAwesomeMessenger_MyAwesomeMessengerUITests.framework */; };
+		EEC82DBA70A795CEC8FEACA9 /* Pods_MyAwesomeMessengerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2455AD3D62B7E6FF8F9F254 /* Pods_MyAwesomeMessengerTests.framework */; };
+		F365D2F7DBD7F5A22BB0214F /* Pods_MyAwesomeMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFD1BEB3CF6CD8D29FCAC8F /* Pods_MyAwesomeMessenger.framework */; };
+		F50472DE29C76FBE0052A7ED /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50472DD29C76FBE0052A7ED /* UserTableViewCell.swift */; };
+		F50472E129C8BE6F0052A7ED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50472E029C8BE6F0052A7ED /* ChatViewController.swift */; };
+		F50472E529C8C0440052A7ED /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50472E429C8C0440052A7ED /* Messages.swift */; };
+		F50472E829CDEACE0052A7ED /* ChatFbRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50472E729CDEACE0052A7ED /* ChatFbRequests.swift */; };
+		F50472EA29D0F6860052A7ED /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50472E929D0F6860052A7ED /* ChatViewModel.swift */; };
+		F50472ED29D1071A0052A7ED /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50472EC29D1071A0052A7ED /* Observer.swift */; };
+		F54BD60A299E92C600718057 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F54BD609299E92C600718057 /* GoogleService-Info.plist */; };
+		F54BD60C299EACC200718057 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD60B299EACC200718057 /* Validator.swift */; };
+		F54BD60E299EB06700718057 /* LogInUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD60D299EB06700718057 /* LogInUserInfo.swift */; };
+		F54BD610299FE5C100718057 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD60F299FE5C100718057 /* AlertManager.swift */; };
+		F54BD61229A03BB200718057 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD61129A03BB200718057 /* ForgotPasswordViewController.swift */; };
+		F54BD61529A398CE00718057 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD61429A398CE00718057 /* ProfileViewController.swift */; };
+		F54BD61929A39C5C00718057 /* ProfileFirebaseRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD61829A39C5C00718057 /* ProfileFirebaseRequests.swift */; };
+		F5872B9B29A67D11004A2F20 /* TableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872B9A29A67D11004A2F20 /* TableViewViewModel.swift */; };
+		F5872B9E29A67DD4004A2F20 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872B9D29A67DD4004A2F20 /* UsersModel.swift */; };
+		F5872BA029A68322004A2F20 /* tableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872B9F29A68322004A2F20 /* tableViewCellViewModel.swift */; };
+		F5872BA429A6B449004A2F20 /* UsersFbRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872BA329A6B449004A2F20 /* UsersFbRequests.swift */; };
+		F5872BA829ABE6FE004A2F20 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872BA729ABE6FE004A2F20 /* UsersViewController.swift */; };
+		F5872BB729B7CDDC004A2F20 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5872BB629B7CDDC004A2F20 /* Launch Screen.storyboard */; };
+		F5872BB929C22EB7004A2F20 /* CurrentUserUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872BB829C22EB7004A2F20 /* CurrentUserUserDefaults.swift */; };
+		F5DBDBDC29992F3A00A39DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBDB29992F3A00A39DFA /* AppDelegate.swift */; };
+		F5DBDBE329992F3A00A39DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DBDBE129992F3A00A39DFA /* Main.storyboard */; };
+		F5DBDBE529992F3B00A39DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5DBDBE429992F3B00A39DFA /* Assets.xcassets */; };
+		F5DBDBF329992F3B00A39DFA /* MyAwesomeMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBF229992F3B00A39DFA /* MyAwesomeMessengerTests.swift */; };
+		F5DBDBFD29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBFC29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift */; };
+		F5DBDBFF29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBFE29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift */; };
+		F5DBDC10299AD2F900A39DFA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC0F299AD2F900A39DFA /* WelcomeViewController.swift */; };
+		F5DBDC12299AD31A00A39DFA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC11299AD31A00A39DFA /* RegisterViewController.swift */; };
+		F5DBDC14299AD33C00A39DFA /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC13299AD33C00A39DFA /* AuthorizationViewController.swift */; };
+		F5DBDC23299E826200A39DFA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC22299E826200A39DFA /* AuthService.swift */; };
+		F5DBDC28299E838C00A39DFA /* RegisterUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC27299E838C00A39DFA /* RegisterUserInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5DBDBEF29992F3B00A39DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5DBDBD029992F3900A39DFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5DBDBD729992F3A00A39DFA;
+			remoteInfo = MyAwesomeMessenger;
+		};
+		F5DBDBF929992F3B00A39DFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5DBDBD029992F3900A39DFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5DBDBD729992F3A00A39DFA;
+			remoteInfo = MyAwesomeMessenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		312916066EBB0A16D33CD218 /* Pods_MyAwesomeMessenger_MyAwesomeMessengerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAwesomeMessenger_MyAwesomeMessengerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFD1BEB3CF6CD8D29FCAC8F /* Pods_MyAwesomeMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAwesomeMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C481DF288BEE602241A34B /* Pods-MyAwesomeMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeMessenger.release.xcconfig"; path = "Target Support Files/Pods-MyAwesomeMessenger/Pods-MyAwesomeMessenger.release.xcconfig"; sourceTree = "<group>"; };
+		6DD45867EFB6EA79D7818C9E /* Pods-MyAwesomeMessengerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeMessengerTests.release.xcconfig"; path = "Target Support Files/Pods-MyAwesomeMessengerTests/Pods-MyAwesomeMessengerTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF5D626D776819B2B874B9A4 /* Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D653D3D1CD80CA28C93D3807 /* Pods-MyAwesomeMessengerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeMessengerTests.debug.xcconfig"; path = "Target Support Files/Pods-MyAwesomeMessengerTests/Pods-MyAwesomeMessengerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1D2B65B46FE87F4C4B906B3 /* Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.release.xcconfig"; path = "Target Support Files/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F0C7CBCFADA6957A6F7153D8 /* Pods-MyAwesomeMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAwesomeMessenger.debug.xcconfig"; path = "Target Support Files/Pods-MyAwesomeMessenger/Pods-MyAwesomeMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		F2455AD3D62B7E6FF8F9F254 /* Pods_MyAwesomeMessengerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAwesomeMessengerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50472DD29C76FBE0052A7ED /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		F50472E029C8BE6F0052A7ED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F50472E429C8C0440052A7ED /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		F50472E729CDEACE0052A7ED /* ChatFbRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFbRequests.swift; sourceTree = "<group>"; };
+		F50472E929D0F6860052A7ED /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		F50472EC29D1071A0052A7ED /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		F54BD609299E92C600718057 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F54BD60B299EACC200718057 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		F54BD60D299EB06700718057 /* LogInUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInUserInfo.swift; sourceTree = "<group>"; };
+		F54BD60F299FE5C100718057 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		F54BD61129A03BB200718057 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		F54BD61429A398CE00718057 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F54BD61829A39C5C00718057 /* ProfileFirebaseRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFirebaseRequests.swift; sourceTree = "<group>"; };
+		F5872B9A29A67D11004A2F20 /* TableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModel.swift; sourceTree = "<group>"; };
+		F5872B9D29A67DD4004A2F20 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		F5872B9F29A68322004A2F20 /* tableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCellViewModel.swift; sourceTree = "<group>"; };
+		F5872BA329A6B449004A2F20 /* UsersFbRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersFbRequests.swift; sourceTree = "<group>"; };
+		F5872BA729ABE6FE004A2F20 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		F5872BB629B7CDDC004A2F20 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F5872BB829C22EB7004A2F20 /* CurrentUserUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserUserDefaults.swift; sourceTree = "<group>"; };
+		F5DBDBD829992F3A00A39DFA /* MyAwesomeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAwesomeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DBDBDB29992F3A00A39DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5DBDBE229992F3A00A39DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5DBDBE429992F3B00A39DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5DBDBE929992F3B00A39DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5DBDBEE29992F3B00A39DFA /* MyAwesomeMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAwesomeMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DBDBF229992F3B00A39DFA /* MyAwesomeMessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeMessengerTests.swift; sourceTree = "<group>"; };
+		F5DBDBF829992F3B00A39DFA /* MyAwesomeMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAwesomeMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5DBDBFC29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeMessengerUITests.swift; sourceTree = "<group>"; };
+		F5DBDBFE29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5DBDC0F299AD2F900A39DFA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F5DBDC11299AD31A00A39DFA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F5DBDC13299AD33C00A39DFA /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		F5DBDC22299E826200A39DFA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F5DBDC27299E838C00A39DFA /* RegisterUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5DBDBD529992F3A00A39DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F365D2F7DBD7F5A22BB0214F /* Pods_MyAwesomeMessenger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DBDBEB29992F3B00A39DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC82DBA70A795CEC8FEACA9 /* Pods_MyAwesomeMessengerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DBDBF529992F3B00A39DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C96521D2A93D9111806908 /* Pods_MyAwesomeMessenger_MyAwesomeMessengerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64D0DD558EFAB05E7DA8D047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD1BEB3CF6CD8D29FCAC8F /* Pods_MyAwesomeMessenger.framework */,
+				312916066EBB0A16D33CD218 /* Pods_MyAwesomeMessenger_MyAwesomeMessengerUITests.framework */,
+				F2455AD3D62B7E6FF8F9F254 /* Pods_MyAwesomeMessengerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCED856579A53F5448BF80AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0C7CBCFADA6957A6F7153D8 /* Pods-MyAwesomeMessenger.debug.xcconfig */,
+				60C481DF288BEE602241A34B /* Pods-MyAwesomeMessenger.release.xcconfig */,
+				AF5D626D776819B2B874B9A4 /* Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.debug.xcconfig */,
+				E1D2B65B46FE87F4C4B906B3 /* Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.release.xcconfig */,
+				D653D3D1CD80CA28C93D3807 /* Pods-MyAwesomeMessengerTests.debug.xcconfig */,
+				6DD45867EFB6EA79D7818C9E /* Pods-MyAwesomeMessengerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F50472DF29C8BE320052A7ED /* ChatModule */ = {
+			isa = PBXGroup;
+			children = (
+				F50472EB29D106FC0052A7ED /* Observer */,
+				F50472E629CDEAAE0052A7ED /* ViewModels */,
+				F50472E329C8C0070052A7ED /* Models */,
+				F50472E229C8BFF60052A7ED /* Controllers */,
+			);
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
+		F50472E229C8BFF60052A7ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F50472E029C8BE6F0052A7ED /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F50472E329C8C0070052A7ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F50472E429C8C0440052A7ED /* Messages.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F50472E629CDEAAE0052A7ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F50472E729CDEACE0052A7ED /* ChatFbRequests.swift */,
+				F50472E929D0F6860052A7ED /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F50472EB29D106FC0052A7ED /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				F50472EC29D1071A0052A7ED /* Observer.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		F54BD61329A3981C00718057 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				F54BD61729A39C2300718057 /* ViewModels */,
+				F54BD61629A39C0D00718057 /* ViewControllers */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		F54BD61629A39C0D00718057 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F54BD61429A398CE00718057 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F54BD61729A39C2300718057 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F54BD61829A39C5C00718057 /* ProfileFirebaseRequests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F5872B9129A679A3004A2F20 /* UsersModule */ = {
+			isa = PBXGroup;
+			children = (
+				F5872B9429A67A83004A2F20 /* Controllers */,
+				F5872B9C29A67DB7004A2F20 /* Models */,
+				F5872B9929A67CDE004A2F20 /* ViewModels */,
+			);
+			path = UsersModule;
+			sourceTree = "<group>";
+		};
+		F5872B9429A67A83004A2F20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5872BA729ABE6FE004A2F20 /* UsersViewController.swift */,
+				F50472DD29C76FBE0052A7ED /* UserTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F5872B9929A67CDE004A2F20 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F5872B9A29A67D11004A2F20 /* TableViewViewModel.swift */,
+				F5872B9F29A68322004A2F20 /* tableViewCellViewModel.swift */,
+				F5872BA329A6B449004A2F20 /* UsersFbRequests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F5872B9C29A67DB7004A2F20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5872B9D29A67DD4004A2F20 /* UsersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5872BB129B7B959004A2F20 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDBDB29992F3A00A39DFA /* AppDelegate.swift */,
+				F5872BB829C22EB7004A2F20 /* CurrentUserUserDefaults.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		F5872BB229B7B973004A2F20 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDBE429992F3B00A39DFA /* Assets.xcassets */,
+				F54BD609299E92C600718057 /* GoogleService-Info.plist */,
+				F5DBDBE929992F3B00A39DFA /* Info.plist */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		F5DBDBCF29992F3900A39DFA = {
+			isa = PBXGroup;
+			children = (
+				F5DBDBDA29992F3A00A39DFA /* MyAwesomeMessenger */,
+				F5DBDBF129992F3B00A39DFA /* MyAwesomeMessengerTests */,
+				F5DBDBFB29992F3B00A39DFA /* MyAwesomeMessengerUITests */,
+				F5DBDBD929992F3A00A39DFA /* Products */,
+				CCED856579A53F5448BF80AE /* Pods */,
+				64D0DD558EFAB05E7DA8D047 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5DBDBD929992F3A00A39DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDBD829992F3A00A39DFA /* MyAwesomeMessenger.app */,
+				F5DBDBEE29992F3B00A39DFA /* MyAwesomeMessengerTests.xctest */,
+				F5DBDBF829992F3B00A39DFA /* MyAwesomeMessengerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5DBDBDA29992F3A00A39DFA /* MyAwesomeMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				F5872BB229B7B973004A2F20 /* Resourses */,
+				F5872BB129B7B959004A2F20 /* Aplication */,
+				F5DBDC0B299AD11B00A39DFA /* LogInModule */,
+				F54BD61329A3981C00718057 /* ProfileModule */,
+				F5872B9129A679A3004A2F20 /* UsersModule */,
+				F50472DF29C8BE320052A7ED /* ChatModule */,
+				F5872BB629B7CDDC004A2F20 /* Launch Screen.storyboard */,
+				F5DBDBE129992F3A00A39DFA /* Main.storyboard */,
+			);
+			path = MyAwesomeMessenger;
+			sourceTree = "<group>";
+		};
+		F5DBDBF129992F3B00A39DFA /* MyAwesomeMessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDBF229992F3B00A39DFA /* MyAwesomeMessengerTests.swift */,
+			);
+			path = MyAwesomeMessengerTests;
+			sourceTree = "<group>";
+		};
+		F5DBDBFB29992F3B00A39DFA /* MyAwesomeMessengerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDBFC29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift */,
+				F5DBDBFE29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift */,
+			);
+			path = MyAwesomeMessengerUITests;
+			sourceTree = "<group>";
+		};
+		F5DBDC0B299AD11B00A39DFA /* LogInModule */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDC26299E837000A39DFA /* Models */,
+				F5DBDC25299E834A00A39DFA /* viewControllers */,
+				F5DBDC21299E824300A39DFA /* Services */,
+			);
+			path = LogInModule;
+			sourceTree = "<group>";
+		};
+		F5DBDC21299E824300A39DFA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDC22299E826200A39DFA /* AuthService.swift */,
+				F54BD60B299EACC200718057 /* Validator.swift */,
+				F54BD60F299FE5C100718057 /* AlertManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F5DBDC25299E834A00A39DFA /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDC0F299AD2F900A39DFA /* WelcomeViewController.swift */,
+				F5DBDC11299AD31A00A39DFA /* RegisterViewController.swift */,
+				F5DBDC13299AD33C00A39DFA /* AuthorizationViewController.swift */,
+				F54BD61129A03BB200718057 /* ForgotPasswordViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		F5DBDC26299E837000A39DFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5DBDC27299E838C00A39DFA /* RegisterUserInfo.swift */,
+				F54BD60D299EB06700718057 /* LogInUserInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5DBDBD729992F3A00A39DFA /* MyAwesomeMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DBDC0229992F3B00A39DFA /* Build configuration list for PBXNativeTarget "MyAwesomeMessenger" */;
+			buildPhases = (
+				76CB64A3AC7B1BAE2318CC33 /* [CP] Check Pods Manifest.lock */,
+				F5DBDBD429992F3A00A39DFA /* Sources */,
+				F5DBDBD529992F3A00A39DFA /* Frameworks */,
+				F5DBDBD629992F3A00A39DFA /* Resources */,
+				9A9521605BBD8ABBAB96A5CD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAwesomeMessenger;
+			productName = MyAwesomeMessenger;
+			productReference = F5DBDBD829992F3A00A39DFA /* MyAwesomeMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5DBDBED29992F3B00A39DFA /* MyAwesomeMessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DBDC0529992F3B00A39DFA /* Build configuration list for PBXNativeTarget "MyAwesomeMessengerTests" */;
+			buildPhases = (
+				47BA976EEE2F6541549F068F /* [CP] Check Pods Manifest.lock */,
+				F5DBDBEA29992F3B00A39DFA /* Sources */,
+				F5DBDBEB29992F3B00A39DFA /* Frameworks */,
+				F5DBDBEC29992F3B00A39DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5DBDBF029992F3B00A39DFA /* PBXTargetDependency */,
+			);
+			name = MyAwesomeMessengerTests;
+			productName = MyAwesomeMessengerTests;
+			productReference = F5DBDBEE29992F3B00A39DFA /* MyAwesomeMessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5DBDBF729992F3B00A39DFA /* MyAwesomeMessengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5DBDC0829992F3B00A39DFA /* Build configuration list for PBXNativeTarget "MyAwesomeMessengerUITests" */;
+			buildPhases = (
+				8EE5021B0CE946E83B5520E6 /* [CP] Check Pods Manifest.lock */,
+				F5DBDBF429992F3B00A39DFA /* Sources */,
+				F5DBDBF529992F3B00A39DFA /* Frameworks */,
+				F5DBDBF629992F3B00A39DFA /* Resources */,
+				C64A2C60369FEA9251EE86DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5DBDBFA29992F3B00A39DFA /* PBXTargetDependency */,
+			);
+			name = MyAwesomeMessengerUITests;
+			productName = MyAwesomeMessengerUITests;
+			productReference = F5DBDBF829992F3B00A39DFA /* MyAwesomeMessengerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5DBDBD029992F3900A39DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F5DBDBD729992F3A00A39DFA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F5DBDBED29992F3B00A39DFA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F5DBDBD729992F3A00A39DFA;
+					};
+					F5DBDBF729992F3B00A39DFA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F5DBDBD729992F3A00A39DFA;
+					};
+				};
+			};
+			buildConfigurationList = F5DBDBD329992F3900A39DFA /* Build configuration list for PBXProject "MyAwesomeMessenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5DBDBCF29992F3900A39DFA;
+			productRefGroup = F5DBDBD929992F3A00A39DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5DBDBD729992F3A00A39DFA /* MyAwesomeMessenger */,
+				F5DBDBED29992F3B00A39DFA /* MyAwesomeMessengerTests */,
+				F5DBDBF729992F3B00A39DFA /* MyAwesomeMessengerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5DBDBD629992F3A00A39DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54BD60A299E92C600718057 /* GoogleService-Info.plist in Resources */,
+				F5DBDBE529992F3B00A39DFA /* Assets.xcassets in Resources */,
+				F5872BB729B7CDDC004A2F20 /* Launch Screen.storyboard in Resources */,
+				F5DBDBE329992F3A00A39DFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DBDBEC29992F3B00A39DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DBDBF629992F3B00A39DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47BA976EEE2F6541549F068F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyAwesomeMessengerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76CB64A3AC7B1BAE2318CC33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyAwesomeMessenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE5021B0CE946E83B5520E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A9521605BBD8ABBAB96A5CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyAwesomeMessenger/Pods-MyAwesomeMessenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyAwesomeMessenger/Pods-MyAwesomeMessenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyAwesomeMessenger/Pods-MyAwesomeMessenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C64A2C60369FEA9251EE86DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests/Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5DBDBD429992F3A00A39DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DBDC14299AD33C00A39DFA /* AuthorizationViewController.swift in Sources */,
+				F54BD610299FE5C100718057 /* AlertManager.swift in Sources */,
+				F54BD60C299EACC200718057 /* Validator.swift in Sources */,
+				F5DBDC12299AD31A00A39DFA /* RegisterViewController.swift in Sources */,
+				F54BD61929A39C5C00718057 /* ProfileFirebaseRequests.swift in Sources */,
+				F5DBDC10299AD2F900A39DFA /* WelcomeViewController.swift in Sources */,
+				F5872BA029A68322004A2F20 /* tableViewCellViewModel.swift in Sources */,
+				F5DBDC28299E838C00A39DFA /* RegisterUserInfo.swift in Sources */,
+				F54BD61529A398CE00718057 /* ProfileViewController.swift in Sources */,
+				F5872B9E29A67DD4004A2F20 /* UsersModel.swift in Sources */,
+				F50472EA29D0F6860052A7ED /* ChatViewModel.swift in Sources */,
+				F50472E129C8BE6F0052A7ED /* ChatViewController.swift in Sources */,
+				F50472E829CDEACE0052A7ED /* ChatFbRequests.swift in Sources */,
+				F5872BA429A6B449004A2F20 /* UsersFbRequests.swift in Sources */,
+				F5DBDBDC29992F3A00A39DFA /* AppDelegate.swift in Sources */,
+				F5872B9B29A67D11004A2F20 /* TableViewViewModel.swift in Sources */,
+				F50472ED29D1071A0052A7ED /* Observer.swift in Sources */,
+				F54BD61229A03BB200718057 /* ForgotPasswordViewController.swift in Sources */,
+				F54BD60E299EB06700718057 /* LogInUserInfo.swift in Sources */,
+				F50472DE29C76FBE0052A7ED /* UserTableViewCell.swift in Sources */,
+				F50472E529C8C0440052A7ED /* Messages.swift in Sources */,
+				F5872BB929C22EB7004A2F20 /* CurrentUserUserDefaults.swift in Sources */,
+				F5DBDC23299E826200A39DFA /* AuthService.swift in Sources */,
+				F5872BA829ABE6FE004A2F20 /* UsersViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DBDBEA29992F3B00A39DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DBDBF329992F3B00A39DFA /* MyAwesomeMessengerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5DBDBF429992F3B00A39DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DBDBFF29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift in Sources */,
+				F5DBDBFD29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5DBDBF029992F3B00A39DFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5DBDBD729992F3A00A39DFA /* MyAwesomeMessenger */;
+			targetProxy = F5DBDBEF29992F3B00A39DFA /* PBXContainerItemProxy */;
+		};
+		F5DBDBFA29992F3B00A39DFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5DBDBD729992F3A00A39DFA /* MyAwesomeMessenger */;
+			targetProxy = F5DBDBF929992F3B00A39DFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5DBDBE129992F3A00A39DFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5DBDBE229992F3A00A39DFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5DBDC0029992F3B00A39DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5DBDC0129992F3B00A39DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5DBDC0329992F3B00A39DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0C7CBCFADA6957A6F7153D8 /* Pods-MyAwesomeMessenger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAwesomeMessenger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5DBDC0429992F3B00A39DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60C481DF288BEE602241A34B /* Pods-MyAwesomeMessenger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAwesomeMessenger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5DBDC0629992F3B00A39DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D653D3D1CD80CA28C93D3807 /* Pods-MyAwesomeMessengerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAwesomeMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyAwesomeMessenger";
+			};
+			name = Debug;
+		};
+		F5DBDC0729992F3B00A39DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD45867EFB6EA79D7818C9E /* Pods-MyAwesomeMessengerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAwesomeMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyAwesomeMessenger";
+			};
+			name = Release;
+		};
+		F5DBDC0929992F3B00A39DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF5D626D776819B2B874B9A4 /* Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyAwesomeMessenger;
+			};
+			name = Debug;
+		};
+		F5DBDC0A29992F3B00A39DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D2B65B46FE87F4C4B906B3 /* Pods-MyAwesomeMessenger-MyAwesomeMessengerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyAwesomeMessenger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5DBDBD329992F3900A39DFA /* Build configuration list for PBXProject "MyAwesomeMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DBDC0029992F3B00A39DFA /* Debug */,
+				F5DBDC0129992F3B00A39DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DBDC0229992F3B00A39DFA /* Build configuration list for PBXNativeTarget "MyAwesomeMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DBDC0329992F3B00A39DFA /* Debug */,
+				F5DBDC0429992F3B00A39DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DBDC0529992F3B00A39DFA /* Build configuration list for PBXNativeTarget "MyAwesomeMessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DBDC0629992F3B00A39DFA /* Debug */,
+				F5DBDC0729992F3B00A39DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5DBDC0829992F3B00A39DFA /* Build configuration list for PBXNativeTarget "MyAwesomeMessengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5DBDC0929992F3B00A39DFA /* Debug */,
+				F5DBDC0A29992F3B00A39DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5DBDBD029992F3900A39DFA /* Project object */;
+}

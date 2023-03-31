@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DAD89C51-C575-4152-846E-054580F1B7E9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2922AA2-2174-42BC-B0DF-8B5A44A4B691"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyAwesomeMessenger/Aplication/LogInUserDefaults.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "LogInUserDefaults"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C2922AA2-2174-42BC-B0DF-8B5A44A4B691 - f23b170216c8b047"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyAwesomeMessenger.LogInUserDefaults.deinit"
+                  moduleName = "MyAwesomeMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vanaartuhov/Desktop/MyAwesomeMessenger/MyAwesomeMessenger/Aplication/LogInUserDefaults.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C2922AA2-2174-42BC-B0DF-8B5A44A4B691 - 38fc3345aa5823ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyAwesomeMessenger.LogInUserDefaults.__deallocating_deinit"
+                  moduleName = "MyAwesomeMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vanaartuhov/Desktop/MyAwesomeMessenger/MyAwesomeMessenger/Aplication/LogInUserDefaults.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "C2922AA2-2174-42BC-B0DF-8B5A44A4B691 - 60693689da7ddc80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyAwesomeMessenger.LogInUserDefaults.__allocating_init() -&gt; MyAwesomeMessenger.LogInUserDefaults"
+                  moduleName = "MyAwesomeMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vanaartuhov/Desktop/MyAwesomeMessenger/MyAwesomeMessenger/Aplication/LogInUserDefaults.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "C2922AA2-2174-42BC-B0DF-8B5A44A4B691 - 19159c0e3cf782de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyAwesomeMessenger.LogInUserDefaults.init() -&gt; MyAwesomeMessenger.LogInUserDefaults"
+                  moduleName = "MyAwesomeMessenger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vanaartuhov/Desktop/MyAwesomeMessenger/MyAwesomeMessenger/Aplication/LogInUserDefaults.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9"
+                  endingLineNumber = "9"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
