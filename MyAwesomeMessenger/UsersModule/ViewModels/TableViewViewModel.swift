@@ -13,6 +13,7 @@ protocol TableViewViewModelType {
     func numberOfRows() -> Int
     func cellViewModel(forIndexPath indexPath: IndexPath) -> TableViewCellViewModelType
     var users: [User] { get set }
+    var user: User? { get }
 }
 
 final class TableViewViewModel: TableViewViewModelType {
@@ -22,6 +23,9 @@ final class TableViewViewModel: TableViewViewModelType {
     // massive of users
     var users: [User] = []
 
+    // current user
+    var user: User?
+    
     // returns number of rows in table view wich equal to count of elements in users massive
     func numberOfRows() -> Int {
         return users.count
@@ -38,5 +42,9 @@ final class TableViewViewModel: TableViewViewModelType {
     init(FB: UsersFBRequestsProtocol) {
         // set class of type UsersFBRequestsProtocol in self.FB preperty
         self.FB = FB
+        FB.getCurrentUserInfo { [weak self] error, user in
+            guard let user = user else { print(error?.localizedDescription as Any); return }
+            self?.user = user
+        }
     }
 }

@@ -13,7 +13,6 @@ import FirebaseAuth
 protocol methodsForProfileProtocol {
     func logOut(complition: @escaping (Error?)->Void)
     func uploadImage(image: UIImage, complition: @escaping(Error?)->Void)
-    func getCurrentUserInfo(complition:@escaping (User?, Error?) -> Void )
 }
 
 class ProfileViewModel: methodsForProfileProtocol {
@@ -50,22 +49,5 @@ class ProfileViewModel: methodsForProfileProtocol {
                 }
         }
     }
-    //MARK: getCurrentUserInfo
-    // get current user information(url string of avatar image, username and Id)
-    // set thet valus in UserDafaults CurrentUser property 
-    //                                                  imageURL userName Error
-    public func getCurrentUserInfo(complition:@escaping (User?, Error?) -> Void ) {
-        guard let userUID = Auth.auth().currentUser?.uid else { return }
-        Firestore.firestore().collection("users").document(userUID).getDocument { snap, error in
-            if let error = error {
-                complition(nil, error)
-            }
-            guard let data = snap?.data() else { return }
-            let avatarURL = data["avatarURL"] as! String
-            let username = data["username"] as! String
-            let user = User(userAvatarUrl: avatarURL, userName: username, userId: userUID)
-            CurrentUserInfoUserDefaults.currentUser = user
-            complition(user,nil)
-        }
-    }
+   
 }

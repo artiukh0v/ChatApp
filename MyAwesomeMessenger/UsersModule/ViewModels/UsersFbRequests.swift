@@ -11,7 +11,7 @@ import FirebaseAuth
 
 protocol UsersFBRequestsProtocol {
     func getAllUsers(completion: @escaping ([User]) -> Void)
-    
+    func getCurrentUserInfo(complition:@escaping (Error?, User?) -> Void)
 }
 class UsersFBRequests: UsersFBRequestsProtocol {
     // func that return all users without current user
@@ -37,6 +37,28 @@ class UsersFBRequests: UsersFBRequestsProtocol {
                 usersResult.append(user)
             }
             completion(usersResult)
+        }
+    }
+    //MARK: getCurrentUserInfo
+    // get current user information(url string of avatar image, username and Id)
+    // set thet valus in UserDafaults CurrentUser property
+    //                                                  imageURL userName Error
+    public func getCurrentUserInfo(complition:@escaping (Error?, User?) -> Void ) {
+        guard let userUID = Auth.auth().currentUser?.uid else { return }
+        Firestore.firestore().collection("users").document(userUID).getDocument { snap, error in
+            if let error = error {
+                complition(error, nil)
+            }
+            guard let data = snap?.data() else { return }
+            let avatarURL = data["avatarURL"] as! String
+            let username = data["username"] as! String
+            let user = User(userAvatarUrl: avatarURL, userName: username, userId: userUID)
+            CurrentUserInfoUserDefaults.currentUser = user
+            print(user.userId)
+            DispatchQueue.main.async {
+                print(CurrentUserInfoUserDefaults.currentUser?.userAvatarUrl as Any)
+            }
+            complition(nil, user)
         }
     }
 }

@@ -21,7 +21,6 @@
 		F54BD60E299EB06700718057 /* LogInUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD60D299EB06700718057 /* LogInUserInfo.swift */; };
 		F54BD610299FE5C100718057 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD60F299FE5C100718057 /* AlertManager.swift */; };
 		F54BD61229A03BB200718057 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD61129A03BB200718057 /* ForgotPasswordViewController.swift */; };
-		F54BD61529A398CE00718057 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD61429A398CE00718057 /* ProfileViewController.swift */; };
 		F54BD61929A39C5C00718057 /* ProfileFirebaseRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BD61829A39C5C00718057 /* ProfileFirebaseRequests.swift */; };
 		F5872B9B29A67D11004A2F20 /* TableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872B9A29A67D11004A2F20 /* TableViewViewModel.swift */; };
 		F5872B9E29A67DD4004A2F20 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872B9D29A67DD4004A2F20 /* UsersModel.swift */; };
@@ -31,12 +30,10 @@
 		F5872BB729B7CDDC004A2F20 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5872BB629B7CDDC004A2F20 /* Launch Screen.storyboard */; };
 		F5872BB929C22EB7004A2F20 /* CurrentUserUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5872BB829C22EB7004A2F20 /* CurrentUserUserDefaults.swift */; };
 		F5DBDBDC29992F3A00A39DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBDB29992F3A00A39DFA /* AppDelegate.swift */; };
-		F5DBDBE329992F3A00A39DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5DBDBE129992F3A00A39DFA /* Main.storyboard */; };
 		F5DBDBE529992F3B00A39DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5DBDBE429992F3B00A39DFA /* Assets.xcassets */; };
 		F5DBDBF329992F3B00A39DFA /* MyAwesomeMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBF229992F3B00A39DFA /* MyAwesomeMessengerTests.swift */; };
 		F5DBDBFD29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBFC29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift */; };
 		F5DBDBFF29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDBFE29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift */; };
-		F5DBDC10299AD2F900A39DFA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC0F299AD2F900A39DFA /* WelcomeViewController.swift */; };
 		F5DBDC12299AD31A00A39DFA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC11299AD31A00A39DFA /* RegisterViewController.swift */; };
 		F5DBDC14299AD33C00A39DFA /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC13299AD33C00A39DFA /* AuthorizationViewController.swift */; };
 		F5DBDC23299E826200A39DFA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DBDC22299E826200A39DFA /* AuthService.swift */; };
@@ -81,7 +78,6 @@
 		F54BD60D299EB06700718057 /* LogInUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInUserInfo.swift; sourceTree = "<group>"; };
 		F54BD60F299FE5C100718057 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		F54BD61129A03BB200718057 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		F54BD61429A398CE00718057 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F54BD61829A39C5C00718057 /* ProfileFirebaseRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFirebaseRequests.swift; sourceTree = "<group>"; };
 		F5872B9A29A67D11004A2F20 /* TableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModel.swift; sourceTree = "<group>"; };
 		F5872B9D29A67DD4004A2F20 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
@@ -92,7 +88,6 @@
 		F5872BB829C22EB7004A2F20 /* CurrentUserUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserUserDefaults.swift; sourceTree = "<group>"; };
 		F5DBDBD829992F3A00A39DFA /* MyAwesomeMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAwesomeMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DBDBDB29992F3A00A39DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5DBDBE229992F3A00A39DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5DBDBE429992F3B00A39DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5DBDBE929992F3B00A39DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5DBDBEE29992F3B00A39DFA /* MyAwesomeMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAwesomeMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +95,6 @@
 		F5DBDBF829992F3B00A39DFA /* MyAwesomeMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAwesomeMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DBDBFC29992F3B00A39DFA /* MyAwesomeMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeMessengerUITests.swift; sourceTree = "<group>"; };
 		F5DBDBFE29992F3B00A39DFA /* MyAwesomeMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F5DBDC0F299AD2F900A39DFA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F5DBDC11299AD31A00A39DFA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F5DBDC13299AD33C00A39DFA /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		F5DBDC22299E826200A39DFA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -214,7 +208,6 @@
 		F54BD61629A39C0D00718057 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F54BD61429A398CE00718057 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,7 +308,6 @@
 				F5872B9129A679A3004A2F20 /* UsersModule */,
 				F50472DF29C8BE320052A7ED /* ChatModule */,
 				F5872BB629B7CDDC004A2F20 /* Launch Screen.storyboard */,
-				F5DBDBE129992F3A00A39DFA /* Main.storyboard */,
 			);
 			path = MyAwesomeMessenger;
 			sourceTree = "<group>";
@@ -360,7 +352,6 @@
 		F5DBDC25299E834A00A39DFA /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F5DBDC0F299AD2F900A39DFA /* WelcomeViewController.swift */,
 				F5DBDC11299AD31A00A39DFA /* RegisterViewController.swift */,
 				F5DBDC13299AD33C00A39DFA /* AuthorizationViewController.swift */,
 				F54BD61129A03BB200718057 /* ForgotPasswordViewController.swift */,
@@ -486,10 +477,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54BD60A299E92C600718057 /* GoogleService-Info.plist in Resources */,
-				F5DBDBE529992F3B00A39DFA /* Assets.xcassets in Resources */,
 				F5872BB729B7CDDC004A2F20 /* Launch Screen.storyboard in Resources */,
-				F5DBDBE329992F3A00A39DFA /* Main.storyboard in Resources */,
+				F5DBDBE529992F3B00A39DFA /* Assets.xcassets in Resources */,
+				F54BD60A299E92C600718057 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,10 +612,8 @@
 				F54BD60C299EACC200718057 /* Validator.swift in Sources */,
 				F5DBDC12299AD31A00A39DFA /* RegisterViewController.swift in Sources */,
 				F54BD61929A39C5C00718057 /* ProfileFirebaseRequests.swift in Sources */,
-				F5DBDC10299AD2F900A39DFA /* WelcomeViewController.swift in Sources */,
 				F5872BA029A68322004A2F20 /* tableViewCellViewModel.swift in Sources */,
 				F5DBDC28299E838C00A39DFA /* RegisterUserInfo.swift in Sources */,
-				F54BD61529A398CE00718057 /* ProfileViewController.swift in Sources */,
 				F5872B9E29A67DD4004A2F20 /* UsersModel.swift in Sources */,
 				F50472EA29D0F6860052A7ED /* ChatViewModel.swift in Sources */,
 				F50472E129C8BE6F0052A7ED /* ChatViewController.swift in Sources */,
@@ -675,17 +663,6 @@
 			targetProxy = F5DBDBF929992F3B00A39DFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F5DBDBE129992F3A00A39DFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5DBDBE229992F3A00A39DFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F5DBDC0029992F3B00A39DFA /* Debug */ = {
@@ -738,7 +715,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -792,7 +769,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -810,13 +787,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyAwesomeMessenger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -838,13 +817,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyAwesomeMessenger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -866,8 +847,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP83RCY6QC;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -886,8 +868,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP83RCY6QC;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -905,6 +888,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP83RCY6QC;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerUITests";
@@ -923,6 +907,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NP83RCY6QC;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "-.MyAwesomeMessengerUITests";

@@ -90,8 +90,8 @@ extension ChatViewController: MessagesDisplayDelegate, MessagesDataSource, Messa
     }
     // sets avatars for both users
     func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
-        if message.sender.senderId == CurrentUserInfoUserDefaults.currentUser.userId {
-            let url = URL(string: CurrentUserInfoUserDefaults.currentUser.userAvatarUrl)
+        if message.sender.senderId == CurrentUserInfoUserDefaults.currentUser?.userId {
+            let url = URL(string: CurrentUserInfoUserDefaults.currentUser?.userAvatarUrl ?? "")
             viewModel.getAvatarImage(url: url!) { image in
                 let avatar = Avatar(image: image)
                 avatarView.set(avatar: avatar)

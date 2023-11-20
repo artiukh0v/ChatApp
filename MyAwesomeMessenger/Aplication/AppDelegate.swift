@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         FirebaseApp.configure()
         isLogIn()
         return true
@@ -22,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
-        
         
     }
     // func that checking is user loged or not
@@ -33,27 +33,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             logInVc()
         }
     }
-    // func that set WelcomeViewControler initial
+    // func that set AuthorizationViewControler initial
     private func logInVc() {
-        let VC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController") as! WelcomeViewController
-        let vc = UINavigationController(rootViewController: VC)
-        vc.isNavigationBarHidden = true
-        self.window?.rootViewController = vc
-        self.window?.makeKeyAndVisible()
+        
+        let navigationController = UINavigationController(rootViewController: AuthorizationViewController())
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
     }
     // func that set ProfileViewController initial
     private func mainVc() {
-        let tabBar = UITabBarController()
-        let profileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
-        
-        let usersVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UsersViewController") as! UsersViewController
-        let usersNavController = UINavigationController(rootViewController: usersVC)
-        usersNavController.tabBarItem = UITabBarItem(title: "Users", image: UIImage(systemName: "message"), selectedImage:  UIImage(systemName: "message.fill"))
-        
-        let controllers = [profileVC, usersNavController]
-        tabBar.setViewControllers(controllers, animated: true)
-        self.window?.rootViewController = tabBar
+        let navigationController = UINavigationController(rootViewController: UsersViewController())
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         
     }

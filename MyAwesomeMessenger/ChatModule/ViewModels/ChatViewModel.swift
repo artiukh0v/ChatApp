@@ -64,7 +64,7 @@ class ChatViewModel: ChatViewModelType, ChatViewModelProtocol{
     init(FB: ChatFBRequestsType, otherId: String) {
         self.FB = FB
         self.otherId = otherId
-        selfSenderId = CurrentUserInfoUserDefaults.currentUser.userId
+        selfSenderId = CurrentUserInfoUserDefaults.currentUser?.userId ?? ""
         
         // If chatId is nil, retrieves the conversation ID from Firebase and loads the messages for that conversation
         if chatId == nil {

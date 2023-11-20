@@ -26,8 +26,15 @@ class User: NSObject, NSCoding {
     }
     // init that needs for UserDefaults
     required init?(coder: NSCoder) {
-        userAvatarUrl = coder.decodeObject(forKey: "userAvatarUrl") as? String ?? ""
-        userName = coder.decodeObject(forKey: "userName") as? String ?? ""
-        userId = coder.decodeObject(forKey: "userId") as? String ?? ""
+        guard
+            let userAvatarUrl = coder.decodeObject(forKey: "userAvatarUrl") as? String,
+            let userName = coder.decodeObject(forKey: "userName") as? String,
+            let userId = coder.decodeObject(forKey: "userId") as? String
+        else {
+            return nil
+        }
+            self.userAvatarUrl = userAvatarUrl
+            self.userName = userName
+            self.userId = userId
     }
 }
